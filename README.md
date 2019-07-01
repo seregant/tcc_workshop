@@ -1,4 +1,4 @@
-Panduan install : 
+**Panduan install :** 
 1. Install  [Go](https://golang.org/doc/install) golang pada server dan atur [Go Workspace](https://golang.org/doc/code.html#Workspaces) pada server
 2. Masuk ke $GOPAYH/src dan jalankan `go get https://github.com/seregant/tcc_workshop.git` 
 3. Install [Govendor](https://github.com/kardianos/govendor) `go get github.com/kardianos/govendor`
@@ -10,7 +10,7 @@ Panduan install :
 Dengan konfigurasi default aplikasi berjalan pada port 8000.
 
 
-Panduan install (Docker) : 
+**Panduan install (Docker) :** 
 
 1. Masuk ke folder $GOPATH/src/github.com/seregant/tugas-workshop
 2. Build docker image dengan menjalankan command `docker build .`
