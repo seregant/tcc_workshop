@@ -1,0 +1,30 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-tugas
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx-tugas
+    spec:
+      containers:
+      - name: app-workshop
+        image: dharafibri/workshoptcc:nginx-lb
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: nginx-tugas
+spec: 
+  ports: 
+     -  port: 8080
+        protocol: TCP
+        targetPort: 8080
+  selector: 
+    app: nginx-tugas
+  type: NodePort
